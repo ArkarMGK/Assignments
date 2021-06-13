@@ -1,0 +1,221 @@
+body{
+    margin: 0px;
+    background: #b6e7fa;
+}
+
+/* Navigation Bar */
+.navbar{
+    top:0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    font-size: 1.6em;
+    list-style-type: none;
+    background: #3b6b66; 
+}
+
+.navbar li{
+    border-bottom: 0.2em solid #3b6b66;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    border-bottom: 0.2em solid white;
+}
+
+/* main image */
+#image_1{
+    max-width: 80%;
+    margin: 3em;
+    box-shadow: 0 0 2em black;
+}
+
+/* Various Font Sizes */
+h1{
+    font-size: 2.4em;
+}
+
+h2{
+    font-size: 2.4em;
+}
+
+.listFontSize{
+    font-size: 1.8em;
+}
+
+.paragraphFontSize{
+    font-size: 2em;
+}
+
+/* text decoration */
+p span{
+    font-style: italic;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.yummy{
+    font-style: normal;
+    color: red;
+}
+
+/* headers padding */
+.h1_padding{
+    padding-top: 1em;
+}
+
+.h2_padding{
+    padding: .5em;
+}
+
+h1, p{
+    margin-left: .2em;
+}
+
+/* cards */
+.ingredients ul{
+    list-style-type: "️\02714";
+}
+
+.directions ol{
+    list-style-type: upper-roman;
+}
+
+.ingredients li, .directions li{
+    margin-top: 1em;
+}
+
+.card{
+    padding: 2em;
+    margin: 2em 1em;
+    display: flex;
+    background: grey;
+    border-radius: 2em;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 40%;
+    box-shadow: 0 0 1em black;
+}
+
+/* footer */
+footer{
+    color: white;
+    padding: 2em 0;
+    background: #3b6b66;
+}
+
+footer ol{
+    font-size: 1.6em;
+    margin: 0;
+}
+
+footer li{
+    margin: 1em 0;
+}
+
+footer a{
+    color: inherit;
+}
+
+footer a:hover{
+    color:#567ebf;
+}
+
+
+/* Smaller than 400px */
+
+/* Navigation bar on the right side */
+/* Hide two images from card section */
+/* Alter root font size */
+
+@media screen and (max-width:400px){
+
+    html{
+        font-size: 10px;
+    }
+
+    .navbar{
+        right: 0;
+        width: 25%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .navbar li{
+        margin: 1em .2em;
+    }
+
+    .h1_padding{
+        padding-top: 0;
+    }
+
+    main, footer{
+        width: 75%;
+    }
+
+    #image_2 , #image_3{
+        display: none;
+    }
+}
+
+/* between 401 and 750px */
+/* slightly increase root font-size */
+@media screen and (min-width: 401px) and (max-width:750px){
+
+    html{
+        font-size: 13px;
+    }
+
+    .navbar{
+        right: 0;
+        width: 25%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li{
+        margin: 1em .2em;
+    }
+
+    .h1_padding{
+        padding-top: 0;
+    }
+
+    main, footer{
+        width: 75%;
+    }
+
+    #image_2 , #image_3{
+        display: none;
+    }
+}
+
+/* larger than 750px */
+/* Navigation bar at the top  */
+/* Show all images */
+/* Default root font-size  */
+@media screen and (min-width:750px){
+
+    .navbar{
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    .navbar li{
+        padding: .5em;
+    }
+
+    h1{
+        margin-top: 1em;
+    }
+}

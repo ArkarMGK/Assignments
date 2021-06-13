@@ -1,0 +1,69 @@
+/* Altering links based on their states (LVHA-order)*/
+
+a:link{
+    color:blue;
+}
+
+a:visited{
+    color: purple;
+    text-decoration: underline;
+}
+
+a:hover{
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:active{
+    color: red;
+}
+
+
+/* Classes and Ids */
+
+#bodyBackgroundColor{
+    background-color:bisque;
+}
+
+.paragraphFontSize{
+    font-size: 24px;
+}
+
+.listFontSize{
+    font-size: 20px;
+}
+
+.h1-padding{
+    padding-bottom: 20px;
+}
+
+.h2-padding{
+    padding: 10px;
+}
+
+/* to underline some element */
+.underlined{
+    text-decoration: underline;
+}
+
+/* checkmark icon in unordered list */
+section.ingredients ul{
+    list-style-type: "️\02714";
+}
+
+/* Roman numerals order in ordered list */
+section.directions ol{
+    list-style-type:upper-roman;
+}
+
+/* all span element that should be italic */
+p span{
+    font-style: italic;
+}
+
+/* first span element that should be red */
+.yummy{
+    font-style: normal;
+    color: red;
+}
+

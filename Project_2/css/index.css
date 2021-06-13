@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+/* Styling all universal elements */
+a{
+    text-decoration: none;
+}
+
+hr{
+    border: .2em solid #a3a3a3;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.description {
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
+/*  */
+body{
+    background-color: #000;
+    color: white;
+}
+
+/* Set dim background image */
+.background-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8)), url("../images/covers.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Style Header */
+.header-section {
+    margin: auto;
+    padding-top: 1em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-section .logo {
+    max-width: 60% ;
+}
+
+.header-section .btn {
+    font-size: 1em;
+    padding: .5em 1em;
+    color: inherit;
+    cursor: pointer;
+    background-color: #fa2e2e;
+}
+
+.header-section .btn:hover{
+   background-color: #e00000;
+}
+
+.header-section .logo, .btn-sign-in{
+    margin-top: -2em;
+}
+
+/* Description */
+.description-section {
+    width: 60%;
+    padding: 2em;    
+    margin: auto;
+    text-align: center;
+}
+
+/* Membership login */
+
+.membership-section, .faq-section {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.membership-section .ask-email {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.membership-section .email-login {
+    width: 100%;
+    display: flex;
+    height: 3em; 
+    margin-top: 2em;
+}
+
+.membership-section .input-group {
+    height: 100%;
+    width: 70%;
+    position: relative;
+    color: #aaaaaa;
+    margin-bottom: 2em;
+}
+
+.membership-section .get-started {
+    background-color:#fa2e2e;
+    width: 30%;
+    height: 100%;
+    font-size: 1.5em;
+    padding: .5em;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    border: none;  
+}
+
+.membership-section .get-started:hover {
+    background-color: #e00000;
+}
+
+.input-group input {
+    width: 100%;
+    height: 100%;
+    padding: 1.2em 0em .5em 1em;
+    outline: none;
+    border: none;
+    border-radius: .2em;
+    font-size: 1em;
+}
+
+.input-group label{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 1em;
+    top: .8em;
+    pointer-events: none;
+}
+
+.input-group label span {
+    font-size: 1.2em;
+}
+
+/* moving label text upward when focus on input */
+
+input:focus + label span, input:valid + label span{
+    font-size: 1em;
+}
+
+input:focus + label, input:valid +label {
+    top: .2em;
+}
+
+
+/* three more section */
+.enjoy-section , .download-section, .watch-everywhere-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    min-height: 500px;
+}
+
+.enjoy-section div, .download-section div, .watch-everywhere-section div {
+    width: 40%;
+}
+
+.enjoy-section .right-section {
+    background-image: url("../images/smart_tv.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 300px;
+}
+
+.download-section .left-section {
+    margin-left: 3em;
+    background-image: url("../images/phone.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    width: 500px;
+    height: 400px;
+    position: relative;
+}
+
+/*   */
+.download-section .right-section-mobile {
+    display: none;
+}
+
+.download-section .downloading {
+    display: flex;
+    height: 100px;
+    min-width: 500px;
+    position: absolute;
+    top: 280px;
+    left: -20px;
+    align-items: center;
+    background: black;
+    border: 3px solid gray;
+    border-radius: 1em;
+    justify-content: space-between;
+}
+
+.download-section .img-section{
+    width: 20%;
+    height: 90px;
+    padding: .5em;
+}
+
+.download-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.watch-everywhere-section .right-section {
+    background-image: url("../images/tablet.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+}
+
+/* FAQ section */
+.faq-section h1{
+    padding: 1em 0em;
+    font-size: 3em;
+}
+
+.faq-section div{
+    display: flex;
+    align-items: center;
+    padding: .5em 2em;
+    background-color: #4d4c4c;
+    margin-bottom: 1em;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+.faq-section span:last-child {
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+.faq-section span:last-child:hover{
+    color: white;
+}
+
+/* styling footer */
+.footer-section {
+    width: 90%;
+    margin: auto;
+    color: #a3a3a3;
+}
+
+.footer-section h3 {
+    padding: 3em 0;
+}
+
+.footer-section ul{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li{
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 1em;
+}
+
+.footer-section a{
+    color: inherit;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+    .description-section, .membership-section {
+        width: 80%;
+    }
+
+    .membership-section {
+        padding-bottom: 5em;
+    }
+
+    .membership-section .ask-email {
+        font-size: 2em;
+    }
+    
+    .enjoy-section, .download-section, .watch-everywhere-section {
+        padding-top: 3em;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .enjoy-section div, .download-section div , .watch-everywhere-section div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .download-section .right-section {
+        display: none;
+    }
+
+    .download-section .right-section-mobile {
+        display: block;
+    }
+
+    .membership-section .email-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership-section .input-group {
+        width: 100%;
+    }
+
+    .membership-section .get-started {
+        width: 30%;
+        font-size: 1.2em;
+    }
+
+    .faq-section h1{
+        width: 70%;
+        margin: auto;
+    }
+    .faq-section {
+        width: 100%;
+    }
+}
